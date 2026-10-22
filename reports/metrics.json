@@ -1,0 +1,93 @@
+{
+  "dataset": "data/Iris.csv",
+  "rows": 150,
+  "feature_columns": [
+    "SepalLengthCm",
+    "SepalWidthCm",
+    "PetalLengthCm",
+    "PetalWidthCm"
+  ],
+  "target_column": "Species",
+  "class_counts": {
+    "Iris-setosa": 50,
+    "Iris-versicolor": 50,
+    "Iris-virginica": 50
+  },
+  "random_state": 42,
+  "test_size": 0.2,
+  "selected_model": "support_vector_machine",
+  "cross_validation": {
+    "logistic_regression": {
+      "mean_accuracy": 0.9583333333333334,
+      "std_accuracy": 0.026352313834736508
+    },
+    "support_vector_machine": {
+      "mean_accuracy": 0.9666666666666668,
+      "std_accuracy": 0.016666666666666653
+    },
+    "random_forest": {
+      "mean_accuracy": 0.95,
+      "std_accuracy": 0.0311804782231162
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.9666666666666667,
+    "balanced_accuracy": 0.9666666666666667,
+    "macro_f1": 0.9665831244778612,
+    "classification_report": {
+      "Iris-setosa": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 10.0
+      },
+      "Iris-versicolor": {
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1-score": 0.9473684210526315,
+        "support": 10.0
+      },
+      "Iris-virginica": {
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1-score": 0.9523809523809523,
+        "support": 10.0
+      },
+      "accuracy": 0.9666666666666667,
+      "macro avg": {
+        "precision": 0.9696969696969697,
+        "recall": 0.9666666666666667,
+        "f1-score": 0.9665831244778612,
+        "support": 30.0
+      },
+      "weighted avg": {
+        "precision": 0.9696969696969696,
+        "recall": 0.9666666666666667,
+        "f1-score": 0.9665831244778613,
+        "support": 30.0
+      }
+    },
+    "confusion_matrix_labels": [
+      "Iris-setosa",
+      "Iris-versicolor",
+      "Iris-virginica"
+    ],
+    "confusion_matrix": [
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        0,
+        9,
+        1
+      ],
+      [
+        0,
+        0,
+        10
+      ]
+    ]
+  }
+}
